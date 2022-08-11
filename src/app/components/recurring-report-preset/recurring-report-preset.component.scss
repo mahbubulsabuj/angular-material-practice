@@ -1,0 +1,38 @@
+.accordion-container {
+  margin: 10px;
+  &__title {
+    margin-left: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    :last-child {
+      margin-left: 10px;
+    }
+    &--bold {
+      font-weight: 500;
+    }
+    &--medium {
+      font-size: 20px;
+    }
+    &--semi-small {
+      font-size: 15px;
+    }
+    &--small {
+      font-size: 12px;
+    }
+    &--color-grey {
+      color: grey;
+    }
+  }
+  &__recurrence-list-content {
+    margin-left: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+.mat-expansion-panel {
+  border: 1px solid #f0f0f0;
+}

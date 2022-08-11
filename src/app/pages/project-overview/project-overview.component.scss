@@ -1,0 +1,113 @@
+.project-overview {
+  margin: 20px;
+
+  &__title {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+  &__tabs-container {
+    border: 1px solid #f0f0f0;
+    background: #ffffff;
+    border-radius: 8px;
+
+    &__tab {
+      display: flex;
+      background: #ffffff;
+      font-size: 20px;
+      font-weight: 800;
+    }
+  }
+  &--bg-color {
+    background: #f9f9f9;
+  }
+}
+
+.company {
+  margin: 20px;
+  margin-top: 55px;
+  width: 100%;
+  border-radius: 8px;
+  background: #ffffff;
+  border: 1px solid #f0f0f0;
+  &__upper-section {
+    padding: 20px;
+  }
+  &__type {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    width: 140px;
+    background: #dfdfe1;
+    border-radius: 5px;
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+  &__close-btn {
+    display: flex;
+    justify-content: center;
+  }
+  &__image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__info {
+    padding: 20px;
+  }
+  &__title {
+    font-size: 22px;
+    font-weight: 600;
+    color: rgb(69, 65, 65);
+  }
+  &__image {
+    border: 3px solid #3f51b5;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+  &__address {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    :last-child {
+      padding-right: 10px;
+    }
+  }
+  &__domain-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  &__employee-info {
+    padding: 20px;
+  }
+  &__employee {
+    display: flex;
+    align-items: center;
+  }
+  &__employee-profile {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  &__employee-name {
+    font-weight: 500;
+  }
+  &__employee-email {
+    font-weight: 500;
+    
+  }
+}
+
+.mat-tab-label-content {
+  font-weight: bold;
+}
+
+.project-overview-wrapper {
+  width: 80%;
+  margin: auto;
+  background: #f9f9f9;
+}

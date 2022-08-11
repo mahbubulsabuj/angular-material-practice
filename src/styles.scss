@@ -1,0 +1,52 @@
+@use "@angular/material" as mat;
+@include mat.core();
+@import "./normalize.scss";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Roboto:wght@100;300;700;900&display=swap");
+
+html,
+body {
+  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+
+  background: #f9f9f9;
+}
+
+.mat-tab-label-content {
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.mat-accordion .mat-expansion-panel {
+  margin: 10px;
+}
+
+.mat-expansion-panel-header-description {
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.mat-expansion-panel-header {
+  margin: 15px;
+}
+
+.mat-tab-labels {
+  justify-content: space-evenly;
+}
+
+.mat-tab-label-content {
+  letter-spacing: 1px;
+  font-size: 16px;
+}
+
+
+$theme-primary: mat.define-palette(mat.$blue-grey-palette);
+$theme-accent: mat.define-palette(mat.$blue-grey-palette);
+$theme: mat.define-light-theme((
+ color: (
+   primary: $theme-primary,
+   accent: $theme-accent,
+ )
+));
+
+@include mat.core-theme($theme);
+@include mat.button-theme($theme);

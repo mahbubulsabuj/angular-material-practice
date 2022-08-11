@@ -1,0 +1,65 @@
+<div class="accordion-container">
+  <div
+    fxLayout="row"
+    fxLayoutAlign="start center"
+    class="accordion-container__title"
+  >
+    <mat-icon>list_alt</mat-icon>
+    <span
+      class="accordion-container__title--bold accordion-container__title--medium"
+      >Recurrence list</span
+    >
+  </div>
+  <mat-accordion *ngFor="let recurrenceItem of recurrenceList">
+    <mat-expansion-panel class="mat-elevation-z0">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          <mat-radio-button value="1"></mat-radio-button>
+          <div
+            class="accordion-container__recurrence-list-header"
+            fxLayout="column"
+          >
+            <div
+              class="accordion-container__title--semi-small accordion-container__title--bold"
+            >
+              {{ recurrenceItem.title }}
+            </div>
+            <div
+              class="accordion-container__title--small accordion-container__title--bold accordion-container__title--color-grey"
+            >
+              {{ recurrenceItem.author_name }} | {{ recurrenceItem.date }}
+            </div>
+          </div>
+        </mat-panel-title>
+
+        <mat-panel-description>
+          <mat-slide-toggle></mat-slide-toggle>
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <mat-divider></mat-divider>
+      <div
+        class="accordion-container__recurrence-list-content"
+        fxLayout="column"
+      >
+        <span>Print Size : {{ recurrenceItem.print_size }}</span>
+        <span>Print type : {{ recurrenceItem.print_type }}</span>
+        <span
+          >Recurrence date & time : {{ recurrenceItem.recurrence_type }}</span
+        >
+        <span>Days : Monday, Tuesday, Friday</span>
+        <span>
+          Date Range : {{ recurrenceItem.date_start }} -
+          {{ recurrenceItem.date_end }}
+        </span>
+      </div>
+      <mat-divider></mat-divider>
+      <div
+        class="accordion-container__recurrence-list-content"
+        fxLayout="column"
+      >
+        <span class="accordion-container__title--bold">Recurrence report download</span>
+        <span>Repeats every week on Monday</span>
+      </div>
+    </mat-expansion-panel>
+  </mat-accordion>
+</div>

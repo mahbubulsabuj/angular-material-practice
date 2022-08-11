@@ -1,0 +1,96 @@
+<div
+  class="project-overview-wrapper"
+  fxLayout="row"
+  fxLayoutAlign="space-around none"
+>
+  <div class="project-overview project-overview--bg-color" fxFlex="1 1 70%">
+    <div class="project-overview__title">Project Overview</div>
+    <div
+      class="project-overview__tabs-container project-overview__tabs-container--bg-color"
+    >
+      <mat-tab-group dynamicHeight>
+        <mat-tab
+          label="Organization"
+          class="project-overview__tabs-container__tab"
+        >
+          <app-recurring-report-preset></app-recurring-report-preset>
+        </mat-tab>
+        <mat-tab label="Phase" class="project-overview__tabs-container__tab">
+          <app-phase></app-phase>
+        </mat-tab>
+        <mat-tab
+          label="Discipline"
+          class="project-overview__tabs-container__tab"
+        >
+          <app-discipline></app-discipline>
+        </mat-tab>
+        <mat-tab
+          label="Recurring Report Preset"
+          class="project-overview__tabs-container__tab"
+        >
+          <app-recurring-report-preset></app-recurring-report-preset>
+        </mat-tab>
+      </mat-tab-group>
+    </div>
+  </div>
+  <div class="company" fxFlex="1 1 25%">
+    <div
+      class="company__upper-section"
+      fxLayout="row"
+      fxLayoutAlign="space-between center"
+    >
+      <div class="company__type">Colaborative</div>
+      <div class="company__close-btn">
+        <button mat-icon-button>
+          <mat-icon color="primary">close</mat-icon>
+        </button>
+      </div>
+    </div>
+    <div class="company__image-container">
+      <img
+        class="company__image"
+        src="assets/images/company_profile.jpg"
+        alt=""
+      />
+    </div>
+    <div
+      class="company__info"
+      fxLayout="row"
+      fxLayoutAlign="space-between center"
+    >
+      <div class="company__title">Amberg Loglay AG</div>
+      <div class="company__edit-btn">
+        <button mat-icon-button><mat-icon>edit</mat-icon></button>
+      </div>
+    </div>
+    <mat-divider style="margin-left: 20px; margin-right: 20px"></mat-divider>
+    <div class="company__address">
+      <mat-icon>location_on</mat-icon> Räffelstrasse 25, 8045 Zürich,
+      Switzerland
+    </div>
+    <mat-divider style="margin-left: 20px; margin-right: 20px"></mat-divider>
+
+    <div class="company__domain-info">
+      <span class="company__domain">
+        Domain : <a href="amberglogly.com">amberglogly.com</a>
+      </span>
+      <span fxLayout="row"
+        >Discipline : &nbsp;
+        <strong style="color: rgb(50, 47, 47)"> PAINTING</strong></span
+      >
+    </div>
+    <mat-divider style="margin-left: 20px; margin-right: 20px"></mat-divider>
+
+    <div class="company__employee-info">
+      <div class="company__employee">
+        <div class="company__employee-profile">
+          <img src="assets/images/employee-svgrepo-com.svg" alt="">
+        </div>
+        <div fxLayout="column">
+          <div class="company__employee-name">Paul Ehrismann</div>
+        <div class="company__employee-email">paul@ag.ch</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
